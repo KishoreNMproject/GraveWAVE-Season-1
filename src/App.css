@@ -22,11 +22,88 @@ body {
   padding: 20px;
 }
 
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 255, 204, 0.3);
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-color);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
 .novel-header {
   text-align: center;
   padding: 40px 0;
   border-bottom: 2px solid var(--accent-color);
   margin-bottom: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-logo {
+    font-size: 0.9rem;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .chapter-title {
+    font-size: 1.5rem;
+  }
+
+  .novel-paragraph {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
 .main-title {

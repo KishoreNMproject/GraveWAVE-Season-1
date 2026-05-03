@@ -40,6 +40,15 @@ function App() {
 
   return (
     <div className="app-container">
+      <nav className="navbar">
+        <div className="nav-logo">GRAVEWAVE</div>
+        <ul className="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#mission-logs">Mission Logs</a></li>
+          <li><a href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+      </nav>
+
       <header className="novel-header">
         <h1 className="main-title">GRAVEWAVE</h1>
         <p className="subtitle">THE ULTIMATE EDITION | [NANA BANANA ENCRYPTED]</p>
@@ -47,7 +56,7 @@ function App() {
 
       <AdUnit slot="header-ad" style={{ marginBottom: '40px' }} />
 
-      <div className="toc-container">
+      <div id="mission-logs" className="toc-container">
         <h2>MISSION LOGS</h2>
         <ul>
           {chapters.map((chap, idx) => (

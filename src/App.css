@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --bg-color: #0d0d12;
+  --text-color: #e0e0e0;
+  --accent-color: #00ffcc;
+  --header-bg: #1a1a24;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.novel-header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 2px solid var(--accent-color);
+  margin-bottom: 40px;
+}
+
+.main-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: var(--accent-color);
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+}
+
+.toc-container {
+  background-color: var(--header-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.toc-container h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-color);
+  margin-top: 0;
+}
+
+.toc-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc-container li {
+  margin-bottom: 10px;
+}
+
+.toc-container a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.toc-container a:hover {
+  color: var(--accent-color);
+}
+
+.chapter {
+  margin-bottom: 60px;
+}
+
+.chapter-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-color);
+  font-size: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.novel-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.novel-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  border: 1px solid #333;
+}
+
+.novel-footer {
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-color);
+  border-top: 1px solid #333;
+}
+
+.ad-container {
+  min-height: 100px;
+  background: rgba(26, 26, 36, 0.5);
+  border: 1px dashed #444;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-container::before {
+  content: 'SPONSORED CONTENT';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: var(--bg-color);
+  padding: 0 5px;
+  font-size: 0.7rem;
+  color: #666;
+  font-family: 'Orbitron', sans-serif;
+}
